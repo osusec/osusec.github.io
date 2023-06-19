@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg px-lg-5 py-lg-2 border-bottom fixed-top topbar">
+  <div class="container-fluid flex-nowrap px-lg-5">
+    <a class="navbar-brand" href="/">
+      <img src="osusec-banner.png" class="img-fluid" alt="OSUSEC" width="450px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+        {{ $about := .Site.Menus.about }}
+        {{ range .Site.Menus.main }}
+          {{ $text := print .Name | safeHTML }}
+          {{ if eq $text "About" }}
+            <li class="nav-item px-1 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ $text }}</a>
+              <ul class="dropdown-menu">
+                {{ range $about }}
+                  {{ $text = print .Name | safeHTML }}
+                  <li><a class="dropdown-item topbar topbar-drop" href="{{ .URL }}">{{ $text }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <li class="nav-item px-1">
+              <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div  style="margin-top: 1000px">
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+      {{ $about := .Site.Menus.about }}
+      {{ range .Site.Menus.main }}
+        {{ $text := print .Name | safeHTML }}
+        {{ if eq $text "About" }}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ $text }}</a>
+          <ul class="dropdown-menu">
+            {{ range $about }}
+              {{ $text = print .Name | safeHTML }}
+              <li><a class="dropdown-item" href="{{ .URL }}">{{ $text }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+          <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+  </div>
