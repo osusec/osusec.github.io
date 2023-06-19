@@ -1,0 +1,29 @@
+/* protip: I HATE FOOTERS */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+}
+
+/* styling top bar */
+
+.heading {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+.topbar {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.33);
+}
+.topbar-drop {
+    text-transform: none;
+}

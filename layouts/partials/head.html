@@ -9,33 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-
-    <!-- protip: I HATE FOOTERS -->
-    <style>
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        main {
-            flex-grow: 1;
-        }
-
-        .heading {
-            font-family: 'Mulish', sans-serif;
-            font-weight: 600;
-        }
-        .topbar {
-            font-family: 'Open Sans',sans-serif;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-        .topbar-drop {
-            text-transform: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/caseyhates.css">
 
     {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
