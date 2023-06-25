@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #dc4405;
+    --secondary-color: #f15f25;
+}
+
 /* protip: I HATE FOOTERS */
 
 body {
@@ -26,4 +31,9 @@ main {
 }
 .topbar-drop {
     text-transform: none;
+    box-shadow: none;
+}
+
+.ghgh {
+    border-bottom: 3px solid var(--primary-color);
 }
