@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 #main {
     margin-top: 150px;
     flex-grow: 1;
@@ -38,3 +39,14 @@ body {
 .userisonthisnavnow {
     border-bottom: 3px solid var(--primary-color);
 }
+
+.highlight-orange-nav {
+    color: black;
+}
+
+.highlight-orange-nav:hover {
+    color: var(--secondary-color) !important;
+}
+
+
+
