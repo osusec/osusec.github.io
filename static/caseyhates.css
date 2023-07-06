@@ -10,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-main {
+#main {
+    margin-top: 150px;
     flex-grow: 1;
 }
 

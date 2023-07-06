@@ -3,10 +3,9 @@
     {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
-    <div class="container" style="margin-top: 150px;">
-      <main id="main">
-        {{ block "main" . }}{{ end }}
-      </main>
-    </div>
+    <main id="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>
