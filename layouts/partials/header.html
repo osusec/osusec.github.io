@@ -26,11 +26,11 @@
           {{ else if eq $text "Home" }}
             {{ $sitetitle := "OSU Security Club - Oregon State University Security Club" }}
             <li class="nav-item px-1">
-              <a class="nav-link text-black {{ if eq $page.Title $sitetitle }}ghgh{{ end }}" href="{{ .URL }}">{{ $text }}</a>
+              <a class="nav-link text-black {{ if eq $page.Title $sitetitle }}userisonthisnavnow{{ end }}" href="{{ .URL }}">{{ $text }}</a>
             </li>
           {{ else }}
             <li class="nav-item px-1">
-              <a class="nav-link text-black {{ if eq $text $page.Title }}ghgh{{ end }}" href="{{ .URL }}">{{ $text }}</a>
+              <a class="nav-link text-black {{ if eq $text $page.Title }}userisonthisnavnow{{ end }}" href="{{ .URL }}">{{ $text }}</a>
             </li>
           {{ end }}
         {{ end }}
