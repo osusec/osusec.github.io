@@ -100,7 +100,16 @@ body {
     background-color: var(--primary-color);
 }
 
+
+.sli-button:hover {
+    background-color: var(--secondary-color);
+}
+
 .discord-button {
     background-color: transparent;
     border: 2px solid white;
+}
+
+.discord-button:hover {
+    border-color: rgba(255,255,255,.7);
 }
