@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: Club Constitution
 layout: 'infopage'
 ---
 

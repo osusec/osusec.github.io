@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: CTF League
 layout: 'infopage'
 ---
 

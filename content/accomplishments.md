@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: Accomplishments
 layout: 'infopage'
 ---
 
