@@ -1,6 +1,7 @@
 ---
 title: "CTF Meetings"
 icon: "users"
+type: "blurb"
 weight: 1
 ---
 

@@ -1,6 +1,7 @@
 :root {
     --primary-color: #dc4405;
     --secondary-color: #f15f25;
+    --text-color: #7a7a7a;
 }
 
 /* protip: I HATE FOOTERS */
@@ -73,7 +74,7 @@ body {
     letter-spacing: 0.9px;
     color: white;
     margin-bottom: 10vw;
-    min-height: 50vh;
+    min-height: 40vh;
 }
 
 .hero-title {
@@ -112,4 +113,54 @@ body {
 
 .discord-button:hover {
     border-color: rgba(255,255,255,.7);
+}
+
+
+.blurb-box {
+    min-height: 200px;
+    padding: 0 25vw;
+}
+
+.blurb-each {
+    width: 15rem;
+    color: var(--text-color);
+}
+
+.blurb-title {
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .14rem;
+    color: #3C424F;
+}
+
+.blurb-each > p {
+    font-size: .99rem;
+}
+
+.blurb-icons {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    padding: 1.75rem 1.5rem;
+    width: 128px;
+    height: 128px;
+    box-shadow: 0 10px 30px 0 rgba(49,52,57,.3),0 10px 30px rgba(0,0,0,.08);
+}
+
+/*@include media-breakpoint-up(lg) {*/
+@media (min-width: 992px) {
+    .blurb-icons {
+        position: relative;
+        bottom: 64px;
+    }
+}
+
+/*@include media-breakpoint-down(md) {*/
+@media (max-width: 991.98px) {
+    .blurb-icons {
+        margin: 1.5rem;
+    }
 }

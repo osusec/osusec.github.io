@@ -9,8 +9,16 @@
   </div>
 </div>
 
-<div class="bg-light"  style="min-height: 40vh;">
-  <p>help me</p>
+<div class="bg-light justify-content-center"  style="min-height: 60vh;">
+  <div class="blurb-box d-flex flex-wrap justify-content-around">
+    {{ range .Site.Sections }}
+      {{ if eq .Type "home" }}
+        {{ range .Sections.ByWeight }}
+          {{ partial "home/blurb.html" . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
 </div>
 
 {{ end }}

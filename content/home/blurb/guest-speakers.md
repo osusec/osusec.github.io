@@ -1,6 +1,7 @@
 ---
 title: "Guest Speakers"
 icon: "street-view"
+type: "blurb"
 weight: 2
 ---
 

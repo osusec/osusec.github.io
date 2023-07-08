@@ -1,6 +1,7 @@
 ---
 title: "Competitions"
 icon: "flag"
+type: "blurb"
 weight: 3
 ---
 
