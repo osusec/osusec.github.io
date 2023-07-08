@@ -51,7 +51,7 @@ body {
 
 
 #background-img {
-    background-size: auto;
+    background-size: cover;
     background-color: #a0aa95;
 }
 
