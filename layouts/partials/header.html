@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg px-lg-5 py-lg-2 fixed-top topbar">
+<nav class="navbar navbar-expand-lg px-lg-5 py-lg-2 fixed-top topbar bg-light">
   <div class="container-fluid flex-nowrap px-lg-5">
     <a class="navbar-brand" href="/">
       <img src="/osusec-banner.png" class="img-fluid" alt="OSUSEC" width="450px">
@@ -10,7 +10,8 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
       <ul class="navbar-nav d-flex mb-2 mb-lg-0">
         {{ $about := .Site.Menus.about }}
-        {{ $page := .Page}}
+        {{ $page := .Page }}
+        {{ $site := .Site }}
         {{ range .Site.Menus.main }}
           {{ $text := print .Name | safeHTML }}
           {{ if eq $text "About" }}
@@ -24,9 +25,8 @@
               </ul>
             </li>
           {{ else if eq $text "Home" }}
-            {{ $sitetitle := "OSU Security Club - Oregon State University Security Club" }}
             <li class="nav-item px-1">
-              <a class="nav-link highlight-orange-nav {{ if eq $page.Title $sitetitle }}userisonthisnavnow{{ end }}" href="{{ .URL }}">{{ $text }}</a>
+              <a class="nav-link highlight-orange-nav {{ if eq $page.Title $site.Title }}userisonthisnavnow{{ end }}" href="{{ .URL }}">{{ $text }}</a>
             </li>
           {{ else }}
             <li class="nav-item px-1">

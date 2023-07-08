@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-    {{ partial "head.html" . }}
-  <body>
+  {{ partial "head.html" . }}
+  <body id="background-img" style="background-image: url('/{{ if .IsHome }}Home{{else}}{{ .Page.Title | urlize }}{{ end }}.jpg');">
     {{ partial "header.html" . }}
     <main id="main">
       {{ block "main" . }}{{ end }}

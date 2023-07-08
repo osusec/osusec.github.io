@@ -1,6 +1,6 @@
 baseURL: 'https://osusec.org/'
 languageCode: 'en-us'
-title: 'OSU Security Club - Oregon State University Security Club'
+Title: 'OSU Security Club'
 
 permalinks:
   blog: '/:filename:/'
@@ -41,5 +41,6 @@ menu:
 
 params:
   dateFormat: "Jan 2, 2006"
-  homeText: 'You just made a Hugo blog from scratch.'
   emailAddr: 'security.club@oregonstate.edu'
+  fullTitle: 'Oregon State University Security Club'
+  subTitle: 'Weekly Meetings, Guest Speakers, and CDC/CTF Competitions'
