@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div id="home-jumbotron" class="jumbotron text-center hero-content infopage-hero d-flex flex-column justify-content-center">
+  <h1 class="hero-title py-1">{{ .Title }}</h1>
+</div>
+
+
+<div class="bg-light justify-content-center infopage-content"  style="min-height: 60vh;">
+    {{ .Content }}
+
+    <iframe loading="lazy" src="https://calendar.google.com/calendar/embed?src=1e24l8e726sovcff4jaebfjl9s%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{{ end }}

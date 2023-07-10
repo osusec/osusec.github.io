@@ -1,6 +1,4 @@
 ---
 title: Calendar
-layout: 'infopage'
+layout: 'calendar'
 ---
-
-hello
