@@ -2,6 +2,7 @@
     --primary-color: #dc4405;
     --secondary-color: #f15f25;
     --text-color: #7a7a7a;
+    --subheading-color: #3C424F;
 }
 
 /* protip: I HATE FOOTERS */
@@ -73,8 +74,15 @@ body {
     font-weight: 300;
     letter-spacing: 0.9px;
     color: white;
+}
+
+.homepage-hero {
     margin-bottom: 10vw;
     min-height: 40vh;
+}
+
+.infopage-hero {
+    margin: 5rem 0 7.5rem;
 }
 
 .hero-title {
@@ -133,7 +141,7 @@ body {
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: .14rem;
-    color: #3C424F;
+    color: var(--subheading-color);
 }
 
 .blurb-each > p {
@@ -163,4 +171,40 @@ body {
     .blurb-icons {
         margin: 1.5rem;
     }
+}
+
+
+.infopage-content {
+    padding: 2rem 20vw;
+}
+
+/*@include media-breakpoint-down(md) {*/
+@media (max-width: 991.98px) {
+    .infopage-content {
+        padding: 2rem 5vw;
+        text-align: center;
+    }
+}
+
+.infopage-content > p > a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.infopage-content > p > a:hover {
+    color: var(--secondary-color);
+}
+
+.infopage-content>h1, .infopage-content>h2, .infopage-content>h3, .infopage-content>h4, .infopage-content>h5 {
+    color: var(--subheading-color);
+}
+
+.infopage-content>p {
+    color: var(--text-color);
+}
+
+.infopage-content>p>img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
 }
