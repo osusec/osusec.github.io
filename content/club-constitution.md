@@ -1,6 +1,4 @@
 ---
 title: Club Constitution
-layout: 'infopage'
+layout: 'constitution'
 ---
-
-hello
