@@ -11,4 +11,4 @@ hello
 
 **hi**
 
-![](/resources.jpg)
+![a caption for resources.jpg](/resources.jpg)

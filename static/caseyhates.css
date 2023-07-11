@@ -213,3 +213,12 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+
+.blogcard-each {
+    width: 20rem;
+}
+
+.blogcard-img {
+    width: 100%;
+}

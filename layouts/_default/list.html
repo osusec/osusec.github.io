@@ -1,12 +1,15 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-  <br>
-  {{ partial "date-and-tags.html" . }}
-</p>
-{{ end }}
+<div id="home-jumbotron" class="jumbotron text-center hero-content infopage-hero d-flex flex-column justify-content-center">
+  <h1 class="hero-title py-1">{{ .Title }}</h1>
+</div>
+
+<div class="bg-light justify-content-center infopage-content"  style="min-height: 60vh;">
+  <div class="blogcards d-flex flex-wrap justify-content-center">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      {{ partial "blogcard.html" . }}
+    {{ end }}
+    </div>
+</div>
 
 {{ end }}

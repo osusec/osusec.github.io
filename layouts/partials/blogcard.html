@@ -1,0 +1,11 @@
+<div class="blogcard-each border border-primary">
+    <img src="/blog/{{ .Title | urlize }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img">
+    <div class="blogcard-content py-4 px-4">
+        <h3><a href="/{{ .Title | urlize}}">{{ .Title }}</a></h3>
+        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+        <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+
+        <p><a href="/{{ .Title | urlize }}">Read More</a></p>
+    </div>
+</div>
