@@ -1,7 +1,7 @@
 :root {
     --primary-color: #dc4405;
     --secondary-color: #f15f25;
-    --text-color: #7a7a7a;
+    --text-color: #7a7c7e;
     --subheading-color: #3C424F;
     --mutedtext-color: #afafaf;
 }
@@ -133,6 +133,8 @@ body {
 .blurb-each {
     width: 15rem;
     color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 .blurb-title {
@@ -215,6 +217,10 @@ body {
     height: 100vh;
 }
 
+.infopage-content>ul, .infopage-content>ol {
+    color: var(--text-color);
+}
+
 
 .blogcard-each {
     width: 20rem;
@@ -239,6 +245,8 @@ body {
 .blogcard-title {
     text-decoration: none;
     color: var(--subheading-color);
+    font-family: "Mulish",sans-serif;
+    font-weight: 600;
 }
 
 .blogcard-title:hover {
@@ -249,4 +257,10 @@ body {
 .blogcard-content>time {
     color: var(--mutedtext-color);
     font-size: 0.9rem;
+}
+
+.blogcard-content {
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 600;
 }

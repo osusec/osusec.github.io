@@ -2,9 +2,6 @@ baseURL: 'https://osusec.org/'
 languageCode: 'en-us'
 Title: 'OSU Security Club'
 
-permalinks:
-  blog: '/:filename:/'
-
 taxonomies:
   tag: 'tags'
 
