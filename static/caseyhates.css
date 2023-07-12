@@ -254,7 +254,7 @@ body {
     color: var(--secondary-color);
 }
 
-.blogcard-content>time {
+.blogcard-content>time, .blog-subtext {
     color: var(--mutedtext-color);
     font-size: 0.9rem;
 }
@@ -263,4 +263,30 @@ body {
     color: var(--text-color);
     font-family: "Open Sans", sans-serif;
     font-size: 600;
+}
+
+.blog-content {
+    border: 1px solid var(--mutedtext-color);
+    padding: 4rem;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    background-color: white;
+    color: var(--text-color);
+}
+
+/*@include media-breakpoint-down(md) {*/
+@media (max-width: 991.98px) {
+    .blog-content {
+        padding: 1rem;
+    }
+}
+
+.blog-title {
+    color: var(--subheading-color);
+    font-family: "Mulish",sans-serif;
+    font-weight: 600;
+}
+
+.blog-content-text {
+    margin-top: 2rem;
 }
