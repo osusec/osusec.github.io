@@ -1,12 +1,12 @@
 <div class="blogcard-each mx-2 my-2">
-    <a href="{{ .Permalink }}"><img src="{{ substr .Permalink 0 -1 }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img"></a>
+    <a href="{{ .RelPermalink }}"><img src="{{ substr .RelPermalink 0 -1 }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img"></a>
     <div class="blogcard-content py-4 px-4">
-        <a href="{{ .Permalink}}" class="blogcard-title"><h4 class="blogcard-title">{{ .Title }}</h4></a>
+        <a href="{{ .RelPermalink}}" class="blogcard-title"><h4 class="blogcard-title">{{ .Title }}</h4></a>
         {{ $dateTime := .PublishDate.Format "2006-01-02" }}
         {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
         <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
 
         <p>{{ .Content | truncate 200 }}</p>
-        <p><a href="{{ .Permalink }}"><span style="text-decoration: underline;">Read More</span><i class="fas fa-angle-double-right"></i></a></p>
+        <p><a href="{{ .RelPermalink }}"><span style="text-decoration: underline;">Read More</span><i class="fas fa-angle-double-right"></i></a></p>
     </div>
 </div>

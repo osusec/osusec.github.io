@@ -14,7 +14,7 @@
             <p class="blog-subtext-item"><i class="fa fa-folder"></i> Tags</p>
             <p class="blog-subtext-item"><i class="fa fa-calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time></p>
         </div>
-        <img src="{{ substr .Permalink 0 -1 }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img">
+        <img src="{{ substr .RelPermalink 0 -1 }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img">
         <div class="blog-content-text">
             {{ .Content }}
         </div>
