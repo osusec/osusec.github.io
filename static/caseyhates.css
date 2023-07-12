@@ -3,6 +3,7 @@
     --secondary-color: #f15f25;
     --text-color: #7a7a7a;
     --subheading-color: #3C424F;
+    --mutedtext-color: #afafaf;
 }
 
 /* protip: I HATE FOOTERS */
@@ -217,8 +218,35 @@ body {
 
 .blogcard-each {
     width: 20rem;
+    border: 1px solid var(--mutedtext-color);
+    background-color: white;
 }
 
 .blogcard-img {
     width: 100%;
+}
+
+.blogcard-content>p>a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.blogcard-content>p>a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.blogcard-title {
+    text-decoration: none;
+    color: var(--subheading-color);
+}
+
+.blogcard-title:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.blogcard-content>time {
+    color: var(--mutedtext-color);
+    font-size: 0.9rem;
 }
