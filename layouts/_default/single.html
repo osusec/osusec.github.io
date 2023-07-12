@@ -9,7 +9,11 @@
         <h1 class="blog-title">{{ .Title }}</h1>
         {{ $dateTime := .PublishDate.Format "2006-01-02" }}
         {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-        <p class="blog-subtext"><i class="fa fa-user"></i>&nbsp;{{ .Params.Author }}&nbsp;<i class="fa fa-folder"></i>&nbsp;Tags lmao&nbsp;<i class="fa fa-calendar"></i>&nbsp;<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time></p>
+        <div class="blog-subtext d-flex flex-wrap">
+            <p class="blog-subtext-item"><i class="fa fa-user"></i> {{ .Params.Author }}</p>
+            <p class="blog-subtext-item"><i class="fa fa-folder"></i> Tags</p>
+            <p class="blog-subtext-item"><i class="fa fa-calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time></p>
+        </div>
         <img src="{{ substr .Permalink 0 -1 }}.jpg" alt="{{ .Params.Caption }}" class="blogcard-img">
         <div class="blog-content-text">
             {{ .Content }}

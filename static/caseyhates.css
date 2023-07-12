@@ -259,6 +259,21 @@ body {
     font-size: 0.9rem;
 }
 
+/*@include media-breakpoint-down(md) {*/
+@media (max-width: 991.98px) {
+    .blog-subtext {
+        justify-content: center;
+    }
+}
+
+.blog-subtext {
+    column-gap: 1rem;
+}
+
+.blog-subtext-item > i {
+    margin-right: 4px;
+}
+
 .blogcard-content {
     color: var(--text-color);
     font-family: "Open Sans", sans-serif;

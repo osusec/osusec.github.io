@@ -3,7 +3,7 @@ title: "If by Rudyard Kipling"
 date: 2023-06-18T11:44:53-07:00
 tags: ['poetry', 'life']
 draft: false
-author: whoeverreadthetitle
+author: whoever readthetitle
 ---
 
 If you can keep your head when all about you
