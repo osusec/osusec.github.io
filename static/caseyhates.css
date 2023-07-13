@@ -189,7 +189,7 @@ body {
     }
 }
 
-.infopage-content > p > a {
+.infopage-content > p > a, .infopage-content>ul>li>a, .infopage-content>ol>li>a {
     text-decoration: none;
     color: var(--primary-color);
 }
