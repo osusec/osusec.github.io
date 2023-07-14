@@ -20,5 +20,3 @@ The team consisted of Julie Weber, Mike Carris, Matt Jansen, Evan Mrazik, Otso B
 Congratulations to Stanford University, who finished first place!
 
 ![Polaroid picture of OSUSEC’s CDC team posing by the school flag](/blog/nccdc-2023-polaroid.jpg)
-
-
