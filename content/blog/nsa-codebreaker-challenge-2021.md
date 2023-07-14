@@ -11,7 +11,7 @@ draft: false
 
 On January 4th, 2021, OSUSEC finished 3rd place with 133,337 points at the NSA Codebreaker Challenge. 189 OSU students and OSUSEC members solved at least one of the 11 tasks, and 5 OSU students and OSUSEC members solved all 11. 
 
-![Screenshot of the scoreboard, showing Oregon State University in 3rd place with 133,337 points.](/static/blog/nsa-codebreaker-challenge-2021-scoreboard.png)
+![Screenshot of the scoreboard, showing Oregon State University in 3rd place with 133,337 points.](/blog/nsa-codebreaker-challenge-2021-scoreboard.png)
 
 Some more statistics about the competition are below:
 

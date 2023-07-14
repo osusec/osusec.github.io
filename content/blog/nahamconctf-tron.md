@@ -21,7 +21,7 @@ I used the `namechk` tools from the [OSINT Framework Site](https://osintframewor
 
 `namechk` tells me that there are claimed usernames for the name NahamConTron for many sites:
 
-![Screenshot of namechk for user NahamConTron](/static/blog/nahamconctf-tron-namechk.png)
+![Screenshot of namechk for user NahamConTron](/blog/nahamconctf-tron-namechk.png)
 
 Now that we have exhausted Instagram, I opened up all the other sites with claimed usernames for `NahamConTron` and systematically eliminated them. I ended up at the GitHub account owned by `NahamConTron`, and it included [a dotfiles repo](https://github.com/lyellread/ctf-writeups/blob/master/2020-nahamconctf/tron/dotfiles). This in turn contains [a bash history file](https://github.com/lyellread/ctf-writeups/blob/master/2020-nahamconctf/tron/dotfiles/.bash_history) that gives us the command that was run to access the server:
 

@@ -64,7 +64,7 @@ $ exiftool -fileOrder gpsdatetime -p gpx.fmt /path/to/all_cats > out.gpx
 
 Now, using [this online tool](https://www.gpsvisualizer.com/map?output_home) we can output this data as a png, and interpret the flag from the path:
 
-![Diagram depicting flight path that spells out the flag](/static/blog/houseplantctf-catography-writeup-flightpath.jpg)
+![Diagram depicting flight path that spells out the flag](/blog/houseplantctf-catography-writeup-flightpath.jpg)
 
 ```
 rtcp{4round_7h3_w0r1d}

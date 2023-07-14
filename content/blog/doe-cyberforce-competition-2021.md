@@ -22,7 +22,7 @@ The team roster was:
 
 The final scoreboard was as follows, if a link to an official final scoreboard is made available, I will link it here. 
 
-![Screenshot of the scoreboard, showing Oregon State University in 7th place](/static/blog/doe-cyberforce-competition-2021-scoreboard.png)
+![Screenshot of the scoreboard, showing Oregon State University in 7th place](/blog/doe-cyberforce-competition-2021-scoreboard.png)
 
 We look forward to returning next year, even better prepared for the new competition format!
 

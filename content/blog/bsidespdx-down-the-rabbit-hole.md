@@ -65,7 +65,7 @@ To get result `BSIDESTROLOLOLOL`. Bummer, but at least we can cross off this lea
 
 The message on the top of the screen was decoded, as it was quickly identified to be the [pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher).
 
-![Screenshot of rune-like text, the pigpen cipher](/static/blog/bsidespdx-down-the-rabbit-hole-pigpen.png)
+![Screenshot of rune-like text, the pigpen cipher](/blog/bsidespdx-down-the-rabbit-hole-pigpen.png)
 
 `not a flag either`
 
@@ -93,11 +93,11 @@ Following [an extremely thorough guide about how to decode this very kind of fil
 
 I was a bit slow to start it the first time, so I got the second half first:
 
-![Screenshot of grainy black and white video featuring a can of ovaltine and half of the CTF flag overtop](/static/blog/bsidespdx-down-the-rabbit-hole-ovaltine1.png)
+![Screenshot of grainy black and white video featuring a can of ovaltine and half of the CTF flag overtop](/blog/bsidespdx-down-the-rabbit-hole-ovaltine1.png)
 
 … and the second part on the second run:
 
-![Screenshot of grainy black and white video featuring a can of ovaltine and half of the CTF flag overtop](/static/blog/bsidespdx-down-the-rabbit-hole-ovaltine2.png)
+![Screenshot of grainy black and white video featuring a can of ovaltine and half of the CTF flag overtop](/blog/bsidespdx-down-the-rabbit-hole-ovaltine2.png)
 
 ```
 BSidesPDX{b3_sUR3_T0_dr!nk_y0Ur_Ov4ltin3}

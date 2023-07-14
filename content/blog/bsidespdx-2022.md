@@ -15,6 +15,6 @@ Many thanks to the BSidesPDX crew for hosting another great year! The passion an
 
 For more information on BSidesPDX, please visit: [https://bsidespdx.org/](https://bsidespdx.org/)
 
-![The OSUSEC team at BSides, crammed into an elevator, ready to head home.](/static/blog/bsidespdx-2022-elevator.jpg)
+![The OSUSEC team at BSides, crammed into an elevator, ready to head home.](/blog/bsidespdx-2022-elevator.jpg)
 
-![The CTF team in the “Big W” closet.](/static/blog/bsidespdx-2022-closet.jpg)
+![The CTF team in the “Big W” closet.](/blog/bsidespdx-2022-closet.jpg)

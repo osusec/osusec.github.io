@@ -36,7 +36,7 @@ When ordered (-70.24986, -18.529234), we get [this spot](https://earth.google.co
 
 However, when ordered the other way, (-18.529234, -70.24986), we come across [this spot](https://earth.google.com/web/@-18.52933711,-70.24988924,174.8925544a,155.32728959d,35y,23.907023h,18.45174211t,360r), at 18°31’45.2″S, 70°14’59.5″W.
 
-![Screenshot of Google Earth featuring the Coca-Cola logo](/static/blog/tamuctf-geography-google-earth.png)
+![Screenshot of Google Earth featuring the Coca-Cola logo](/blog/tamuctf-geography-google-earth.png)
 
 Thanks to the TAMUCTF organizers for being reasonable and providing the flag once I proved I got the right location, as I would have had to try a bunch of possibilities:
 

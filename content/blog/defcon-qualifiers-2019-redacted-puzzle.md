@@ -40,7 +40,7 @@ Megapixels                      : 0.922
 
 OK. We know that this is likely a GIF with 35 frames. Let’s try opening it:
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-1.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-1.jpg)
 
 Let’s gather some more information about this GIF:
 
@@ -60,33 +60,33 @@ $identify -verbose redacted-puzzle.gif
 
 That is a bit of a weird color map… Those should correspond with different colors. Let’s open this image in [gimp](https://www.gimp.org/). We use the `Open as Layers` option to get each frame as an individual layer.
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-2.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-2.jpg)
 
 Much layers. Next, we gotta fix that color mapping issue. `Colors>Map>Set Color Map` and choose `Pallete>Ega`:
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-3.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-3.jpg)
 
 Well, we know what the flag’s alphabet will be. Then, after looking at each slide . . . 
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-4.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-4.jpg)
 
 We determined it best to remove the black backgrounds on each. One by one.
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-5.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-5.jpg)
 
 Now we can see them all overlapping. They form some sort of circle:
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-6.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-6.jpg)
 
 Let’s examine only a couple…
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-7.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-7.jpg)
 
 That is intresting. Going off a hunch, we decided to build sets of binary digits representing if the vertex of a frame was where one of the verticies of the overall ‘octagon’, using dots in the background:
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-8.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-8.jpg)
 
-![](/static/blog/defcon-qualifiers-2019-redacted-puzzle-9.jpg)
+![](/blog/defcon-qualifiers-2019-redacted-puzzle-9.jpg)
 
 As we repeated that for each layer, the shapes’ verticies started to ‘rotate’, or ‘drift’ (thus why when all overlayed, they formed a circle, not octagon). We decided to track the movment and adjust the background dots. We generated the ‘bytes’:
 

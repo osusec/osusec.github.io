@@ -35,7 +35,7 @@ A Google search turns up first result of Shannon’s linkedin profile [link](htt
 
 This in turn has a photo on it, which is of some text:
 
-![Photo of a computer screen showing the Lorem Ipsum text containing a CTF flag](/static/blog/auctf-osint-you-all-over-the-place-lorem.jpg)
+![Photo of a computer screen showing the Lorem Ipsum text containing a CTF flag](/blog/auctf-osint-you-all-over-the-place-lorem.jpg)
 
 There is “auctf” and some leetspeak in there, but it is surrounded by (and split up by) the default sample text (“Lorem ipsum dolor sit amet”). We need to remove that, which I did manually (for each word after “auctf”, if it is in the default text, do not count it in the flag) (based on [this](https://loremipsum.io/):
 

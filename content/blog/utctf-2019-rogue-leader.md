@@ -23,7 +23,7 @@ Loading the file in Wireshark, we can clearly see that it is a USB packet captur
 
 ![Screenshot of Wireshark listing USB traffic](/blog/utctf-2019-rogue-leader-wireshark.png)
 
-![Screenshot of Wireshark identifying a device as a flash drive](/static/blog/utctf-2019-rogue-leader-flashdrive.png)
+![Screenshot of Wireshark identifying a device as a flash drive](/blog/utctf-2019-rogue-leader-flashdrive.png)
 
 So, device 2 (with bus id 1) is a flash drive. Other notable devices include a gaming mouse (device 9, bus id 2), a keyboard (device 5, bus id 2), and a tablet (device 4, bus id 2).
 
@@ -31,7 +31,7 @@ So, device 2 (with bus id 1) is a flash drive. Other notable devices include a g
 
 Let’s try to find any files that have been transferred in/out of the flash drive. These packets will be rather large and have the URB_BULK in/out flags set. Filtering just by size nets us one of these packets.
 
-![Screenshot of Wireshark entry with URB_BULK out flag set](/static/blog/utctf-2019-rogue-leader-urb-bulk.png)
+![Screenshot of Wireshark entry with URB_BULK out flag set](/blog/utctf-2019-rogue-leader-urb-bulk.png)
 
 We can dump this data (File > Export packet bytes). This file turns out to be GPG encrypted data.
 
@@ -46,7 +46,7 @@ Now that we have the encrypted file, a natural thing to look for is the password
 
 We can filter for packets with information about keyboard presses.
 
-![Screenshot of Wireshark USB packets with keyboard presses](/static/blog/utctf-2019-rogue-leader-keyboard-presses.png)
+![Screenshot of Wireshark USB packets with keyboard presses](/blog/utctf-2019-rogue-leader-keyboard-presses.png)
 
 The “Leftover Data Capture” looks something like this.
 
@@ -153,12 +153,12 @@ $ file flags.png
 
 And we get flags.png!
 
-![Picture of United Nations country flags](/static/blog/utctf-2019-rogue-leader-flags.png)
+![Picture of United Nations country flags](/blog/utctf-2019-rogue-leader-flags.png)
 
 ### Last Steps Before (getting the flag)
 
 Now that we have flags.png, perhaps the flag is hidden with some steganography techniques. After fiddling around with it, we find that another image is hidden in the LSB of flags.png. Using an [online tool](https://incoherency.co.uk/image-steganography), we get the hidden image.
 
-![Picture of the state of Texas overlaid with the Texan flag and the CTF flag](/static/blog/utctf-2019-rogue-leader-flags.png)
+![Picture of the state of Texas overlaid with the Texan flag and the CTF flag](/blog/utctf-2019-rogue-leader-flags.png)
 
 **Flag: utflag{t3x45_1s_my_f4v0r1te_c0untry}**

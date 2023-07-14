@@ -33,19 +33,19 @@ These QR codes, however, are obviously incomplete, as evidenced by the fractiona
 
 Following that, we screenshotted each image. Here they are:
 
-![A fragment of a QR code](/static/blog/bsidespdx-please-stand-by-1.png)
+![A fragment of a QR code](/blog/bsidespdx-please-stand-by-1.png)
 
-![A fragment of a QR code](/static/blog/bsidespdx-please-stand-by-2.png)
+![A fragment of a QR code](/blog/bsidespdx-please-stand-by-2.png)
 
-![A fragment of a QR code](/static/blog/bsidespdx-please-stand-by-3.png)
+![A fragment of a QR code](/blog/bsidespdx-please-stand-by-3.png)
 
-![A fragment of a QR code](/static/blog/bsidespdx-please-stand-by-4.png)
+![A fragment of a QR code](/blog/bsidespdx-please-stand-by-4.png)
 
 If we think about the regular format for QR codes, we would expect the “Position Patterns” (the square shaped sets of pixels) to be in the corners, so that informs us about the first orientation we should try.
 
 In [Gimp](https://www.gimp.org/), we can stitch these together, and we get the following:
 
-![](/static/blog/bsidespdx-please-stand-by-qr.png)
+![](/blog/bsidespdx-please-stand-by-qr.png)
 
 When scanned, that QR code becomes the text:
 

@@ -13,7 +13,7 @@ This past weekend, OSUSEC competed at the Pacific Rim Collegiate Cyber Defense C
 
 PRCCDC is a 2 day competition where each team must secure a mix of approximately 10 Windows and Linux systems, configure a border firewall, monitor and defend against attacks from the Red Team, and work with business users over the phone throughout the event.
 
-!["Photo of full team for PRCCDC 2019 and Emily Longman"](/static/blog/prccdc-2019-results-everyone.jpg)
+!["Photo of full team for PRCCDC 2019 and Emily Longman"](/blog/prccdc-2019-results-everyone.jpg)
 
 Here’s the full team (from left to right):
 

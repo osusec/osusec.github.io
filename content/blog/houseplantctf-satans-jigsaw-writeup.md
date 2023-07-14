@@ -27,7 +27,7 @@ Then, comes the fun part. Before reading the hint, I tried just forming the imag
 
 The hint makes obvious that we must convert the decimal part of the filename to bytes, but it does not explain what to do with those. However, after trying it out, we saw that the he decoded filenames contain an X and Y ‘coordinate’ in the format “X Y”. Decoding all this, sorting, and making an image is all achieved in the script [image_reconstruct.py](https://github.com/lyellread/ctf-writeups/blob/master/2020-houseplant/satans-jigsaw/image_reconstruct.py).
 
-![A picture of a pencil held in a hand with two QR codes overlaid on top of it](/static/blog/houseplantctf-satans-jigsaw-writeup-pencil.jpg)
+![A picture of a pencil held in a hand with two QR codes overlaid on top of it](/blog/houseplantctf-satans-jigsaw-writeup-pencil.jpg)
 
 The top left QR code was essential to solving the challenge, however the bottom right one contains the flag.
 

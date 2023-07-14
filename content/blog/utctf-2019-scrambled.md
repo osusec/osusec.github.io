@@ -13,15 +13,15 @@ draft: false
 
 This was a 1250 point Forensics challenge (highest points in the category). Here’s the description:
 
-![Scrambled challenge description](/static/blog/utctf-2019-scrambled-challenge-description.png)
+![Scrambled challenge description](/blog/utctf-2019-scrambled-challenge-description.png)
 
 By the time I took a look at the challenge, they had released a hint as well:
 
-![Scrambled hint](/static/blog/utctf-2019-scrambled-hint.png)
+![Scrambled hint](/blog/utctf-2019-scrambled-hint.png)
 
 Based on the hint, I quickly discovered that the challenge description described ways of [manipulating a Rubik’s Cube](https://ruwix.com/the-rubiks-cube/notation/):
 
-![Rubik's Cube face rotations](/static/blog/utctf-2019-scrambled-rubiks-rotations.png)
+![Rubik's Cube face rotations](/blog/utctf-2019-scrambled-rubiks-rotations.png)
 
 Googling the hint (“rubikstega”) leads to a paper entitled “Rubikstega: A Novel Noiseless Steganography Method in Rubik’s Cube” ([link](http://docplayer.net/99336533-Rubikstega-a-novel-noiseless-steganography-method-in-rubik-s-cube.html)). After skimming through the paper, it became clear that this was the method used to encode the message, so I got reading.
 
@@ -33,7 +33,7 @@ Here’s how the encoding works (at a high level, I’ll break it down more as I
     - The rest of the scrambles make up the message
 - The encoding uses base 9 in order to encode messages. Since there are 18 possible moves, there are two moves for each base 9 value:
 
-![From page 4 of the Rubikstega paper](/static/blog/utctf-2019-scrambled-msg-encoding.png)
+![From page 4 of the Rubikstega paper](/blog/utctf-2019-scrambled-msg-encoding.png)
 
 Let’s take a look at the first scramble. This will eventually yield a permutation value (P) that is used to mutate the default message encoding table for the rest of the scrambles.
 
@@ -43,7 +43,7 @@ B2 R U F’ R’ L’ B B2 L F D D’ R’ F2 D’ R R D2 B’ L R
 Scramble 1
 ```
 
-![Scramble 1 format (from page 5 of the Rubikstega paper)](/static/blog/utctf-2019-scrambled-format1.png)
+![Scramble 1 format (from page 5 of the Rubikstega paper)](/blog/utctf-2019-scrambled-format1.png)
 
 1. First, we translate each move to a Base-9 value using the default encoding table. This gives us:
     - 512676150038748115801
@@ -54,7 +54,7 @@ Scramble 1
 
 Now that we have the permutation value, we can modify the original encoding table for the rest of the scrambles:
 
-![New message encoding table (based on P value from scramble 1)](/static/blog/utctf-2019-scrambled-new-encoding.png)
+![New message encoding table (based on P value from scramble 1)](/blog/utctf-2019-scrambled-new-encoding.png)
 
 Now we can take a look at scramble 2. This will eventually yield the message length for the rest of the scrambles.
 
@@ -64,7 +64,7 @@ L’ L B F2 R2 F2 R’ L F’ B’ R D’ D’ F U2 B’ U U D’ U2 F’
 Scramble 2
 ```
 
-![Scramble 2 format (from page 6 of the Rubikstega paper)](/static/blog/utctf-2019-scrambled-format2.png)
+![Scramble 2 format (from page 6 of the Rubikstega paper)](/blog/utctf-2019-scrambled-format2.png)
 
 1. First, we translate each move to Base-9 using the new encoding table that we created using P. This gives us:
     - 263101562434461477412

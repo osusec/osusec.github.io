@@ -11,7 +11,7 @@ draft: false
 
 This was a 1200 point reversing challenge (tied for highest point value in the category). Here’s the description:
 
-![Screenshot of UTCTF's CTFd for the Crackme challenge](/static/blog/utctf-2019-crackme-ctfd.png)
+![Screenshot of UTCTF's CTFd for the Crackme challenge](/blog/utctf-2019-crackme-ctfd.png)
 
 This what we see when we run the binary:
 
@@ -24,7 +24,7 @@ Incorrect password. utflag{wrong_password_btw_this_is_not_the_flag_and_if_you_su
 
 Let’s take a look at the code in IDA Pro:
 
-![Screenshot of main decompliation in IDA Pro](/static/blog/utctf-2019-crackme-decompilation.png)
+![Screenshot of main decompliation in IDA Pro](/blog/utctf-2019-crackme-decompilation.png)
 
 Here’s what the decompilation shows:
 
@@ -38,7 +38,7 @@ Now we see “stuff\[j] = stuff2\[202 – j] ^ (stuff\[j] – 1);”. stuff and 
 
 Before I start working through that obfuscated function, I took a look at divide():
 
-![Screenshot of IDA Pro decompilation of the divide function](/static/blog/utctf-2019-crackme-fastcall_divide.png)
+![Screenshot of IDA Pro decompilation of the divide function](/blog/utctf-2019-crackme-fastcall_divide.png)
 
 Based on the function call “divide(32, 0)”, it does indeed do a divide by zero, which throws an exception, further messing with our debugging and analysis. I ended up just skipping it and not worrying about it, which worked out in the end.
 
@@ -74,7 +74,7 @@ This writes 204 bytes after 0x602090 to stuff.bin. I did the same thing for stuf
 
 With that in hand, we were able to pull out a function that I wanted to decompile. While I would not recommend doing it this way, I wrote a Python program (which you can see [here](https://github.com/zzzanderw/ctf-writeups/blob/master/utctf2019/crackme/replace.py)) that replaced the main() function of the original binary with the new function and dumped it to a new binary so I could load it into IDA:
 
-![Screenshot of new main injected into the program and decompiled by IDA Pro](/static/blog/utctf-2019-crackme-newmain.png)
+![Screenshot of new main injected into the program and decompiled by IDA Pro](/blog/utctf-2019-crackme-newmain.png)
 
 While IDA didn’t do a great job parsing the function since it thought it was main, it showed us the logic. The function applies an xor to each byte with the loop counter plus 51, simple enough.
 
@@ -124,6 +124,6 @@ Why doesn’t our breakpoint get hit?
 
 This is due to a sneaky move by the challenge author by putting a ptrace() call in a function called _csu_init(), which causes debugging to be unsuccessful. If there is more than one trace applied to the program, it exits:
 
-![Screenshot of IDA Pro decompilation of the function that calls ptrace](/static/blog/utctf-2019-crackme-ptrace.png)
+![Screenshot of IDA Pro decompilation of the function that calls ptrace](/blog/utctf-2019-crackme-ptrace.png)
 
 You can patch out the ptrace call with nops, which would allow you to dynamically analyze this. I patched the binary while I was working on the challenge, but ended up just doing it statically.

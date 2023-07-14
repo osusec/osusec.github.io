@@ -27,7 +27,7 @@ First, we deduced some information about the challenge by reading the descriptio
 
 We then proceeded to inspect the website – the HTML looks pretty standard, and I decided to leave player.js alone and come back to it if we failed to find a solution (would be more of a web challenge at that point). Under the ‘Network’ tab, we see that there appear to be two streams of chunks:
 
-![Screenshot of Network monitor on ](/static/blog/angstromctf-streams-network.jpg)
+![Screenshot of Network monitor on ](/blog/angstromctf-streams-network.jpg)
 
 - chunk-stream0-0000*.m4s chunks initiated by init-stream0.m4s
 - chunk-stream1-0000*.m4s chunks initiated by init-stream1.m4s 
