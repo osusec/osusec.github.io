@@ -1,0 +1,62 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65 crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity=sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 crossorigin=anonymous></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&family=Open+Sans:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin=anonymous referrerpolicy=no-referrer><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css integrity="sha512-LopA1sokwAW/FNZdP+/5q8MGyb9CojL1LTz8JMyu/8YZ8XaCDn1EOm6L7RWIIOHRM7K4jwnHuOmyLZeeeYxSOA==" crossorigin=anonymous referrerpolicy=no-referrer><link rel=stylesheet href=/caseyhates.css><title>ångstromCTF - streams | OSU Security Club</title></head><body id=background-img style=background-image:url(/blog/angstromctf-streams.jpg);background-position:50%><nav class="navbar navbar-expand-lg px-lg-5 py-lg-2 fixed-top topbar bg-light"><div class="container-fluid flex-nowrap px-lg-5"><a class=navbar-brand href=/><img src=/osusec-banner.png class=img-fluid alt=OSUSEC width=450px></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul><ul class="navbar-nav d-flex mb-2 mb-lg-0"><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/>Home</a></li><li class="nav-item px-1 dropdown"><a class="nav-link text-black dropdown-toggle" href=# role=button data-bs-toggle=dropdown aria-expanded=false>About</a><ul class=dropdown-menu><li><a class="dropdown-item topbar topbar-drop shadow-none" href=/about/>Who We Are</a></li><li><a class="dropdown-item topbar topbar-drop shadow-none" href=/club-constitution/>Club Constitution</a></li></ul></li><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/calendar/>Calendar</a></li><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/blog/>Blog</a></li><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/ctf-league/>CTF League</a></li><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/accomplishments/>Accomplishments</a></li><li class="nav-item px-1"><a class="nav-link highlight-orange-nav" href=/resources/>Resources</a></li></ul></div></div></nav><main id=main><div id=home-jumbotron class="jumbotron text-center hero-content infopage-hero d-flex flex-column justify-content-center"><h1 class="hero-title py-1">ångstromCTF - streams</h1></div><div class="bg-light justify-content-center infopage-content" style=min-height:60vh><div class=blog-content><h1 class=blog-title>ångstromCTF - streams</h1><div class="blog-subtext d-flex flex-wrap"><p class=blog-subtext-item><i class="fa fa-user"></i> Lyell Read</p><p class=blog-subtext-item><i class="fa fa-folder"></i> Tags</p><p class=blog-subtext-item><i class="fa fa-calendar"></i> <time datetime=2019-04-26>Apr 26, 2019</time></p></div><img src=/blog/angstromctf-streams.jpg alt class=blogcard-img><div class=blog-content-text><h2 id=problem>Problem</h2><p>White noise is useful whether you are trying to sleep, relaxing, or concentrating on writing papers. Find some natural white noise <a href=https://streams.2019.chall.actf.co/>here</a>.</p><p>Note: The flag is all lowercase and follows the standard format (e.g. actf{example_flag})</p><p>Author: ctfhaxor</p><p>Points: 70</p><p>Hint: Are you sure that’s an mp4 file? What’s inside the file?</p><h2 id=solution>Solution</h2><p>First, we deduced some information about the challenge by reading the description. “The flag is all lowercase” implies that we will be constructing it letter by letter, possibly from audio. First thing to check out is the video on the linked website – just river sounds.</p><p>We then proceeded to inspect the website – the HTML looks pretty standard, and I decided to leave player.js alone and come back to it if we failed to find a solution (would be more of a web challenge at that point). Under the ‘Network’ tab, we see that there appear to be two streams of chunks:</p><p><img src=/blog/angstromctf-streams-network.jpg alt="Screenshot of Network monitor on "></p><ul><li>chunk-stream0-0000*.m4s chunks initiated by init-stream0.m4s</li><li>chunk-stream1-0000*.m4s chunks initiated by init-stream1.m4s</li></ul><p>In addition there are two attempts to get a file called stream.mp4 (one that has a status of 206 – partial content, and one 200 – complete)… interesting. We got the file using the “Request URL”:</p><pre tabindex=0><code>$wget https://streams.2019.chall.actf.co/video/stream.mp4
+$file stream.mp4
+stream.mp4: XML 1.0 document, ASCII text
+</code></pre><p>That’s interesting… Let’s open that in an editor. The XML reads as follows (cleaned up for conciseness):</p><pre tabindex=0><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+	
+			&lt;AdaptationSet id=&#34;0&#34; contentType=&#34;video&#34; segmentAlignment=&#34;true&#34; bitstreamSwitching=&#34;true&#34; frameRate=&#34;30/1&#34; lang=&#34;und&#34;&gt;
+				&lt;Representation id=&#34;0&#34; mimeType=&#34;video/mp4&#34; codecs=&#34;avc1.64001f&#34; bandwidth=&#34;278539187&#34; width=&#34;1280&#34; height=&#34;720&#34; frameRate=&#34;30/1&#34;&gt;
+					...
+				&lt;/Representation&gt;
+			&lt;/AdaptationSet&gt;
+			&lt;AdaptationSet id=&#34;1&#34; contentType=&#34;audio&#34; segmentAlignment=&#34;true&#34; bitstreamSwitching=&#34;true&#34; lang=&#34;eng&#34;&gt;
+				&lt;Representation id=&#34;1&#34; mimeType=&#34;audio/mp4&#34; codecs=&#34;mp4a.40.2&#34; bandwidth=&#34;128000&#34; audioSamplingRate=&#34;44100&#34;&gt;
+					&lt;AudioChannelConfiguration schemeIdUri=&#34;urn:mpeg:dash:23003:3:audio_channel_configuration:2011&#34; value=&#34;2&#34; /&gt;
+					...
+				&lt;/Representation&gt;
+			&lt;/AdaptationSet&gt;
+			&lt;AdaptationSet id=&#34;2&#34; contentType=&#34;audio&#34; segmentAlignment=&#34;true&#34; bitstreamSwitching=&#34;true&#34; lang=&#34;und&#34;&gt;
+				&lt;Representation id=&#34;2&#34; mimeType=&#34;audio/mp4&#34; codecs=&#34;mp4a.40.2&#34; bandwidth=&#34;48000&#34; audioSamplingRate=&#34;8000&#34;&gt;
+					&lt;AudioChannelConfiguration schemeIdUri=&#34;urn:mpeg:dash:23003:3:audio_channel_configuration:2011&#34; value=&#34;1&#34; /&gt;
+					...
+				&lt;/Representation&gt;
+			&lt;/AdaptationSet&gt;
+		&lt;/Period&gt;
+	&lt;/MPD&gt;
+</code></pre><p>Notice that there are actually 3 streams: 0: mp4 video, 1, 2: mp4 audio. Our hunch that some audio will contain our flag is looking good, but how to get this last audio file? To ensure that we know how this process of ‘getting’ a channel looks and works, we try it on a channel we know to exist: channel 0: mp4 video.</p><p>From our examination of the files required for the page, we know there are 4 chunks needed, and an init file. We know their names too.</p><pre tabindex=0><code>$wget https://streams.2019.chall.actf.co/video/init-stream0.m4s
+$wget https://streams.2019.chall.actf.co/video/chunk-stream0-00001.m4s
+...
+$wget https://streams.2019.chall.actf.co/video/chunk-stream0-00004.m4s
+$ls
+chunk-stream0-00001.m4s
+chunk-stream0-00002.m4s
+chunk-stream0-00003.m4s
+chunk-stream0-00004.m4s
+init-stream0.m4s
+</code></pre><p>Now that we have all our m4s chunks, we can concatenate them into an mp4 file:</p><pre tabindex=0><code>$cat init-stream0.m4s $(ls -vx chunk-stream0-*.m4s) &gt; stream0.mp4
+</code></pre><p>That file plays the video of the brook that is on the site! Now onto grabbing the unknown audio stream. We need:</p><pre><code>init file for stream2
+chunks 1..n for stream2
+</code></pre><p>…and because we think we know naming conventions, we can guess that those files will be called:</p><ul><li>init-stream2.m4s</li><li>chunk-stream2-0000x.m4s | x in 1..n</li></ul><p>Lets go try to grab that init file:</p><pre tabindex=0><code>$wget https://streams.2019.chall.actf.co/video/init-stream2.m4s
+‘init-stream2.m4s’ saved [741/741] 
+</code></pre><p>It exists! We’re go to get the chunks now, but how do we know how many to grab? What I did was to keep wget-ing the next one while the size of the file was reasonably large:</p><pre tabindex=0><code>$wget https://streams.2019.chall.actf.co/video/chunk-stream2-00001.m4s
+‘chunk-stream2-00001.m4s’ saved [32629/32629]
+</code></pre><p>… rinse repeat:</p><pre tabindex=0><code>$ls -lah 
+32K  chunk-stream2-00001.m4s
+31K  chunk-stream2-00002.m4s
+32K  chunk-stream2-00003.m4s
+33K  chunk-stream2-00004.m4s
+32K  chunk-stream2-00005.m4s
+33K  chunk-stream2-00006.m4s
+9.7K chunk-stream2-00007.m4s
+1.5K chunk-stream2-00008.m4s
+883  chunk-stream2-00009.m4s
+883  chunk-stream2-00010.m4s
+883  chunk-stream2-00011.m4s
+741  init-stream2.m4s
+</code></pre><p>Notice how the sizes drop off at the end? Chunks 9, 10, 11 are not even fetching chunks anymore, they are getting the HTML for the site. We can delete those, and keep 1..8.</p><p>Now we turn those good chunks into a mp4 file:</p><pre tabindex=0><code>$cat init-stream2.m4s $(ls -vx chunk-stream2-*.m4s) &gt; stream2.mp4
+</code></pre><p>Listening to this file makes it obvious that morse code is at play, so off to the <a href=https://morsecode.scphillips.com/labs/audio-decoder-adaptive/>online audio file to text (via morse) converter</a>. There we upload the mp4, and get this result:</p><pre tabindex=0><code>ACTF&lt;KN&gt;F#45H-15-B34D-10N9-11V3-M#39-D45H)
+</code></pre><p>Well that looks ok… but what are those ‘#’? running it again cleans some of this up:</p><pre tabindex=0><code>ACTF&lt;KN&gt;F145H-15-B34D-10N9-11V3-MP39-D45H)
+</code></pre><p>Let’s try to understand what it is saying. “flash is bead long live mpeg-dash”. They likely meant ‘dead’ not ‘bead’ so let’s fix that and give that flag a try:</p><pre tabindex=0><code>actf{f145h_15_d34d_10n9_11v3_mp39_d45h}
+</code></pre></div></div></div></main><footer class="border-top py-4 bg-light"><div class="text-muted text-center"><p>© 2023 OSU Security Club.</p><p>Contact us at: <a href=mailto:security.club@oregonstate.edu class="text-reset text-decoration-none fw-bold">security.club@oregonstate.edu</a></p></div></footer></body></html>

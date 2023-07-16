@@ -1,7 +1,0 @@
-{{ range where .Data.Pages "Section" .Section }}
-    <div class="blurb-each text-center">
-            <i class="fas fa-{{ .Params.icon }} blurb-icons fa-4x"></i>
-            <h5 class="blurb-title">{{ .Title }}</h5>
-            <p>{{ .Content }}</p>
-    </div>
-{{ end }}

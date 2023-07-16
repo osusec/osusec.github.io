@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>houseplantctf on OSU Security Club</title><link>https://osusec.org/tags/houseplantctf/</link><description>Recent content in houseplantctf on OSU Security Club</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://osusec.org/tags/houseplantctf/index.xml" rel="self" type="application/rss+xml"/><item><title>HouseplantCTF - Catography Writeup</title><link>https://osusec.org/blog/houseplantctf-catography-writeup/</link><pubDate>Sun, 26 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/houseplantctf-catography-writeup/</guid><description>Prompt Jubie’s released her own collection of cat pictures. Go check it out!
+http://challs.houseplant.riceteacatpanda.wtf:30002
+Note: The Unsplash author credit is not a part of the challenge, it’s only there to conform with the Unsplash image license.
+Dev: jammy
+Solution Browsing the site, we can see that it is a collection of cat images… A lot of them. From inspecting the sources, we can see that these images are pulled from an API at http://challs.</description></item><item><title>HouseplantCTF Satan's Jigsaw Writeup</title><link>https://osusec.org/blog/houseplantctf-satans-jigsaw-writeup/</link><pubDate>Sun, 26 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/houseplantctf-satans-jigsaw-writeup/</guid><description>Prompt Oh no! I dropped my pixels on the floor and they’re all muddled up! It’s going to take me years to sort all 90,000 of these again 🙁
+Dev: Tom
+Hint! long_to_bytes
+File: chall.7z
+Solution This provided archive contains 90,000 JPEG’s. I extracted all of them to ./images (relative to this README’s PWD). Each of these images has a size of 1 pixel.
+Then, comes the fun part. Before reading the hint, I tried just forming the image from the pixels in the order that they appeared in the folder, but this revealed a ‘static’ image.</description></item></channel></rss>

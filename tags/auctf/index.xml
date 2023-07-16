@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>auctf on OSU Security Club</title><link>https://osusec.org/tags/auctf/</link><description>Recent content in auctf on OSU Security Club</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 Apr 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://osusec.org/tags/auctf/index.xml" rel="self" type="application/rss+xml"/><item><title>AUCTF - ALIedAS About Some Thing</title><link>https://osusec.org/blog/auctf-aliedas-about-some-thing/</link><pubDate>Sun, 05 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/auctf-aliedas-about-some-thing/</guid><description>903 points
+Prompt See what you can find.
+AUCTFShh
+Author: c
+Solution AUCTFShh looks like a username. To find where that username is in use, we can either check manually (as I started out doing), or use some tools from the OSINT Framework Site. Specifically, I used OSINT Framework &amp;gt; Username &amp;gt; Username Search Engines &amp;gt; Namechk.
+I opened each of the greyed out sites in a tab, and looked through each for anything suspicious.</description></item><item><title>AUCTF - Good Old Days</title><link>https://osusec.org/blog/auctf-good-old-days/</link><pubDate>Sun, 05 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/auctf-good-old-days/</guid><description>877 points
+Prompt This site used to look a lot cooler.
+Author: c
+Solution Wayback Machine, here I come! This is the most useful view of the captures for the site ctf.auburn.edu: https://web.archive.org/web/sitemap/https://ctf.auburn.edu/. It shows that, among other subdirectories (and trust me, I visited each a couple times), the /users and /users/50 pages have both been captured.
+https://web.archive.org/web/20200213064621/https://ctf.auburn.edu/users has a user called auctf{Th053_w3rE_Th3_guD_0l3_d4y5} – why it has to be at the end of that page, I don’t know (I checked the top half a couple times during my research).</description></item><item><title>AUCTF - OSINT You All Over the Place</title><link>https://osusec.org/blog/auctf-osint-you-all-over-the-place/</link><pubDate>Sun, 05 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/auctf-osint-you-all-over-the-place/</guid><description>A post-competition writeup; 983 points
+Prompt I do not have access to the prompt, but the URL is devs-r-us.xyz
+Solution After solving the first three challenges, I looked into this one. I investigated the website provided thouroughly, and found out the following:
+Images mcofee.png and mcafee.png are different, their difference contains some data and a discord link (applicable to Oryx, the last OSINT challenge). Loretta Mcintosh (with twitter handle @BackUpOrMcintoshYouOut) and Jorge Greenwood (@JorgeGreenwoodCodes), and two sites listed in Jorge Greenwood’s Bio, all of which are dead ends on Wayback Machine and at the time of writing (facepalm.</description></item><item><title>AUCTF - Who Made Me</title><link>https://osusec.org/blog/auctf-who-made-me/</link><pubDate>Sun, 05 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/auctf-who-made-me/</guid><description>950 points
+Prompt One of the developers of this CTF worked really hard on this challenge.
+note: the answer is not the author’s name
+Author: c
+Solution: Now for a much more real-world OSINT challenge. First, I started by doing a bit of recon. I ascertained that:
+AU in AUCTF is for Auburn University (homeapge) AUCTF is run by members of the AUEHC (Auburn University Ethical Hacking Club). AUEHC is comprised of members: President – Jordan Sosnowski: jjs@auburn.</description></item></channel></rss>

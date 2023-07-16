@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nahamconctf on OSU Security Club</title><link>https://osusec.org/tags/nahamconctf/</link><description>Recent content in nahamconctf on OSU Security Club</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Jun 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://osusec.org/tags/nahamconctf/index.xml" rel="self" type="application/rss+xml"/><item><title>NahamConCTF - Finsta</title><link>https://osusec.org/blog/nahamconctf-finsta/</link><pubDate>Sun, 14 Jun 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/nahamconctf-finsta/</guid><description>50 points
+Prompt This time we have a username. Can you track down NahamConTron?
+Solution I used the namechk tools from the OSINT Framework Site. Specifically, I used OSINT Framework &amp;gt; Username &amp;gt; Username Search Engines &amp;gt; Namechk, similarly to in AUCTF.
+namechk tells me that there are claimed usernames for the name NahamConTron for many sites, including Instagram.
+Checking out the Instagram account, we get the flag.
+flag{i_feel_like_that_was_too_easy} ~ Lyell</description></item><item><title>NahamConcTF - Microosoft</title><link>https://osusec.org/blog/nahamconctf-microosoft/</link><pubDate>Sun, 14 Jun 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/nahamconctf-microosoft/</guid><description>100 points
+Prompt We have to use Microsoft Word at the office!? Oof…
+Download the file below.
+File
+Solution Opening the file does not do much, but it would not be that easy.
+Using file we can find out that this is an OOXML document:
+$ file microsooft.docx microsooft.docx: Microsoft OOXML Based on this, and some quick reading, we can see that this format can contain files. To view these files, I first tried this chrome extension, before settling on getting a trial licensed version of OxygenXML.</description></item><item><title>NahamConCTF - Time Keeper</title><link>https://osusec.org/blog/nahamconctf-time-keeper/</link><pubDate>Sun, 14 Jun 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/nahamconctf-time-keeper/</guid><description>50 points
+Prompt There is some interesting stuff on this website. Or at least, I thought there was…
+Connect here: https://apporima.com/
+Note, this flag is not in the usual format.
+Solution After scoping out that site, the title and description heavily hint towards use of the Wayback Machine. Over there we head, then.
+First, I noted that there were only two captures, so I figured it would be worth it to compare them.</description></item><item><title>NahamConCTF - Tron</title><link>https://osusec.org/blog/nahamconctf-tron/</link><pubDate>Sun, 14 Jun 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/nahamconctf-tron/</guid><description>75 points
+Prompt NahamConTron is up to more shenanigans. Find his server.
+Solution I used the namechk tools from the OSINT Framework Site. Specifically, I used OSINT Framework &amp;gt; Username &amp;gt; Username Search Engines &amp;gt; Namechk, similarly to in AUCTF.
+namechk tells me that there are claimed usernames for the name NahamConTron for many sites:
+Now that we have exhausted Instagram, I opened up all the other sites with claimed usernames for NahamConTron and systematically eliminated them.</description></item><item><title>NahamConCTF - Fake File</title><link>https://osusec.org/blog/nahamconctf-fake-file/</link><pubDate>Wed, 01 Apr 2020 00:00:00 -0700</pubDate><guid>https://osusec.org/blog/nahamconctf-fake-file/</guid><description>100 points
+Prompt Wait… where is the flag?
+Connect here: nc jh2i.com 50026
+Solution Let’s nc to that server and see what’s up:
+$ nc jh2i.com 50026 bash: cannot set terminal process group (1): Inappropriate ioctl for device bash: no job control in this shell user@host:/home/user$ ls -lah ls -lah total 12K dr-xr-xr-x 1 nobody nogroup 4.0K Jun 12 17:10 . drwxr-xr-x 1 user user 4.0K Jun 4 18:54 .. -rw-r--r-- 1 user user 52 Jun 12 17:10 .</description></item></channel></rss>
