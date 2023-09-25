@@ -11,6 +11,6 @@ Current leadership:
 - Vice President: **Otso Barron**
 - Treasurer: **Abigail Whittle**
 - Lab Manager: **Lucas Ball**
-- Community Manager: **Julie Weber**
-- Recruitment: **Julie Weber**
+- Recruitment: **Otso Barron**
 - CTF League Coordinator: **Zane Othman-Gomez**
+- AI Security Officer: **Gabriel Kulp**
