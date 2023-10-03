@@ -6,7 +6,7 @@ categories: ['Club News']
 tags: []
 caption: "Final scoreboard of WWT Blue Team CyberRange event."
 
-draft: true
+draft: false
 ---
 
 Last Thursday, OSUSEC assembled a team of 4 students to compete in WWT's fantastic blue team CyberRange! We had a ton of fun and are very proud to announce that we placed 3rd, going up against a mixture of teams including those from federal agencies & Fortune 500 companies! We played from 3pm to 3am the next morning, all in one shot. The crash afterwards was not pleasant but it was still worth it -- incident response and cyber competitions take on a wilder and much more creative tone when it's an odd hour in the morning.
