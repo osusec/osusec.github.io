@@ -13,4 +13,4 @@ Last Friday night, we were very fortunate to host Terry Boedeker of Armis to dis
 
 He talked about the importance of cyber-physical security and guided us through a hands-on lab with Armis' flagship SIEM, tracing exploit attempts and hidden devices on the demo network. It was super valuable and everyone really enjoyed getting to hear this unique industry perspective! We had 28 students come out and participate, and great informal conversations afterward! Everyone who joined in will be getting an [Armis Cyber Defense](https://www.credly.com/org/armis/badge/cyber-defense-core) cert.
 
-Thank you Terry for your time and expertise, and for buying us dinner :) We hope to see you with OSUSEC again soon!
+Thank you Terry for your time and expertise (and for buying us dinner :) )! We hope to see you with OSUSEC again soon!
