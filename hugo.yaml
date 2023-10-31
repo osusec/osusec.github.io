@@ -39,7 +39,7 @@ menu:
 
 params:
   dateFormat: "Jan 2, 2006"
-  emailAddr: 'security.club@oregonstate.edu'
+  emailAddr: 'security.clubs@oregonstate.edu'
   fullTitle: 'Oregon State University Security Club'
   subTitle: 'Weekly Meetings, Guest Speakers, and CDC/CTF Competitions'
   sliLink: 'https://apps.ideal-logic.com/osusli?key=F3T9-25VWY_5878-CZ4R_bc14da8b'
