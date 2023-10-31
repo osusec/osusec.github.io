@@ -3,7 +3,7 @@ title: CTF League
 layout: 'infopage'
 ---
 
-![CTF League logo, starring a beaver with a lock](https://www.osusec.org/wp-content/uploads/2022/06/ctf_small_years1-300x300.png)
+![CTF League logo, starring a beaver with a lock](/ctf-league_logo.png)
 
 ## Overview
 
