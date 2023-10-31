@@ -32,4 +32,4 @@ CTF League dates for each respective term will be posted on the Discord below as
 
 ## Join CTF League!
 
-Join us on Discord! [https://discord.com/invite/A3Ferx9f](https://discord.com/invite/A3Ferx9f)
+Join us on Discord! [https://discord.gg/RUPbjz3bGZ](https://discord.gg/RUPbjz3bGZ)
