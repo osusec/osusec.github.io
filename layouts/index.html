@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<div class="bg-light justify-content-center"  style="min-height: 60vh;">
+<div class="bg-light justify-content-center"  style="min-height: 45vh;">
   <div class="blurb-box d-flex flex-wrap justify-content-around">
     {{ range .Site.Sections }}
       {{ if eq .Type "home" }}
@@ -19,6 +19,20 @@
       {{ end }}
     {{ end }}
   </div>
+</div>
+
+<div class=" bg-light infopage-content"  style="min-height: 60vh;">
+  <div class="d-flex flex-wrap justify-content-center latest-blogposts-title latest-blogposts">
+    <h1>Latest  Blogposts</h1>
+    <!-- We use our blog to post write-ups from competitions or wargame challenges, summaries of our meetings, important upcoming events, or something cool in security. -->
+  </div>
+  
+  <div class="blogcards d-flex flex-wrap justify-content-center latest-blogposts">
+    {{ range ( where .Site.RegularPages "Type" "blog" ) | first 3 }}
+      {{ partial "blogcard.html" . }}
+    {{ end }}
+  </div>
+  <!-- a button to go to all blogposts -->
 </div>
 
 {{ end }}

@@ -294,3 +294,11 @@ body {
 .blog-content-text {
     margin-top: 2rem;
 }
+
+.latest-blogposts-title {
+    padding: 1.5rem 0;
+}
+
+.latest-blogposts {
+    background: #f0f0f0;
+}
