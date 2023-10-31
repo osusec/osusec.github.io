@@ -11,7 +11,7 @@ Blogposts and any other content to the website is written in Markdown. Here is [
 ### Clone the repo and create a branch
 
 ```sh
-git clone git@github.com:cacama-valvata/osusec-hugo.git
+git clone git@github.com:osusec/osusec.github.io.git
 git checkout -b BRANCH_NAME
 git push --set-upstream origin BRANCH_NAME
 ```
