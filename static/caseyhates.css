@@ -106,13 +106,14 @@ body {
     color: white;
 }
 
-.sli-button {
+.sli-button, .blog-button {
     background-color: var(--primary-color);
 }
 
 
-.sli-button:hover {
+.sli-button:hover, .blog-button:hover {
     background-color: var(--secondary-color);
+    color:white;
 }
 
 .discord-button {
@@ -293,4 +294,26 @@ body {
 
 .blog-content-text {
     margin-top: 2rem;
+}
+
+.latest-blogposts-title {
+    padding: 2.5rem 0 1.5rem 0;
+}
+
+.latest-blogposts {
+    background: #f0f0f0;
+}
+
+.blog-button {
+    height: auto;
+    min-width: 10vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: .85rem;
+    font-weight: 400;
+    padding: .65rem 2rem;
+    line-height: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+
+    margin: 1.5rem 0 2.5rem 0;
 }
