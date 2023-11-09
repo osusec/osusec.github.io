@@ -32,7 +32,9 @@
       {{ partial "blogcard.html" . }}
     {{ end }}
   </div>
-  <!-- a button to go to all blogposts -->
+  <div class="d-flex flex-wrap justify-content-center latest-blogposts">
+    <button class="btn blog-button mx-3" onclick="window.location.href = {{ range .Site.Menus.main }}{{ if eq .Name "Blog" }}{{ .URL | markdownify }}{{ end }}{{ end }};">See All Blog Posts</button>
+  </div>
 </div>
 
 {{ end }}
