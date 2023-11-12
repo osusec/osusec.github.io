@@ -30,6 +30,7 @@ layout: 'infopage'
 
 ## CyberDefense Competitions
 
+- 11/04/23: 15th, 1st regionally - [DoE Cyberforce](https://twitter.com/OSUSEC/status/1723126951077171639?s=20)
 - 03/24/23: 1st – [PRCCDC](https://twitter.com/OSUSEC/status/1640496249643347968?s=20)
 - 11/05/22: 10th, 1st regionally – [DoE Cyberforce](https://twitter.com/OSUSEC/status/1589734031759147008)
 - 04/23/22: 5th – [NCCDC](https://twitter.com/OSUSEC/status/1518417631941840896)
