@@ -1,0 +1,111 @@
+/* Set font, make stuff centered, set colors */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+
+    color: black;
+    background-color: rgb(239, 239, 239);
+}
+
+/* Make logo big and have orange outline */
+.logo {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+    font-weight: lighter;
+    text-shadow: 0 0 6px orangered;
+}
+
+
+.search-container {
+    margin: 20px;
+}
+
+.search-container button {
+    padding: 4px;
+    font-size: 24px;
+}
+
+/* Make search boxes look a bit better */
+.search-container input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+.search-container input:hover, .search-container input:focus {
+    border: 1.5px solid orange;
+    background-color: white;
+}
+
+/* Make the main search box big */
+.big-input {
+    height: 20px;
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Make the tag search box smaller and with a different font */
+.small-input {
+    margin-top: 5px;
+    height: 10px;
+    font-size: 12px;
+    padding: 5px;
+    width: 64%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Make each result box look nicer */
+.result-box {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 8px auto 8px auto;
+    padding: 10px;
+    padding-top: 4px;
+    box-shadow: 2px 2px 5px black;
+}
+.result-box:hover {
+    background-color: white;
+    box-shadow: 1px 1px 8px orangered;
+}
+
+/* No margin on result title and have big font */
+.result-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Make the link stick to the right side of the box */
+.result-link {
+    position: relative;
+    float: right;
+    font-size: 24px;
+}
+/* Make the link have dotted underline and orange on hover */
+.result-link a {
+    text-decoration-style: dotted;
+}
+.result-link a:hover {
+    color: orangered;
+}
+
+/* No margin on the description */
+.result-description {
+    margin: 0;
+}
+
+/* Make tags grey and have no margin */
+.result-tags {
+    margin: 0;
+    color: grey;
+}
+
+
