@@ -45,7 +45,7 @@ Generally, my process for a pwn challenge is:
 - Once you've reverse-engineered to the point that you have a good understanding of the internals of the program, look for the bug!
   - Pwn challenges are usually memory-corruption-based, so look for memory bugs (buffer overflow, use-after-free, etc.)
   - Get the program to crash somehow, don't worry about the precise inputs as long as you find something that crashes and you understand why
-  - Automate a testcase for the crash in pwntools. From now on, you'll be interacting with the program pretty much exclusively through pwntools and GDB. Automating the necessary inputs will save you a LOT of time.
+  - Automate a testcase for the crash in [pwntools](https://github.com/Gallopsled/pwntools/). From now on, you'll be interacting with the program pretty much exclusively through pwntools and GDB. Automating the necessary inputs will save you a LOT of time.
     - My pwntools template looks like this, feel free to steal or adapt:
 
 ```python
