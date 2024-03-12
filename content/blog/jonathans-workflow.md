@@ -19,7 +19,7 @@ Generally, my process for a pwn challenge is:
 - Run the program a few times as a user, just so you can be familiar with what it does. It's much easier to reverse engineer code when you have some idea of what it's trying to accomplish.
   - You can also try giving it weird/invalid input -- ridiculously long strings, invalid/out-of-bounds/misformatted values, etc. -- just to see how it behaves. If you get unexpected behavior -- and *especially* a crash -- take note. You're looking for bugs, and you just found one.
   - One time Andrew (former OSUSECer and legendary ctf god) got a flag by entering `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` into a challenge
-- open up the program in my decompiler of choice, run auto analysis
+- Open up the program in your decompiler of choice, run auto analysis
 
 ## 2. Revving
 
