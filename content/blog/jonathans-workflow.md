@@ -15,7 +15,7 @@ Generally, my process for a pwn challenge is:
 
 ## 1. Recon
 
-- Figure out what kind of program you're dealing with -- run `file` to see what kind of binary it is, maybe `checksec` to see what kind of security measures it has, figure out how to get it to run on your system
+- Figure out what kind of program you're dealing with -- run `file` to see what kind of binary it is, maybe [`checksec`](https://github.com/slimm609/checksec.sh) to see what kind of security measures it has, figure out how to get it to run on your system
 - Run the program a few times as a user, just so you can be familiar with what it does. It's much easier to reverse engineer code when you have some idea of what it's trying to accomplish.
   - You can also try giving it weird/invalid input -- ridiculously long strings, invalid/out-of-bounds/misformatted values, etc. -- just to see how it behaves. If you get unexpected behavior -- and *especially* a crash -- take note. You're looking for bugs, and you just found one.
   - One time Andrew (former OSUSECer and legendary ctf god) got a flag by entering `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` into a challenge
