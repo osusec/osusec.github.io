@@ -91,7 +91,7 @@ if __name__ == "__main__":
   - Figure out how to defeat any security measures.
     - W^X: use onegadget or ROP techniques instead of shellcoding
     - ASLR: either find a way to get the program to leak a memory address, or find a way to corrupt part of a pointer or an offset/index instead of a whole pointer
-      - The fact that modern CPUs are little-endian can help -- if you can get a buffer overflow to stop midway through a pointer, you can control that to overwrite just the low bytes)
+      - The fact that modern CPUs are little-endian can help -- if you can get a buffer overflow to stop midway through a pointer, you can control that to overwrite just the low bytes
       - If you have the ability to leak one or two pointers per execution, but not enough at one time for full arbitrary code execution, you can overwrite the return address of a function to jump back to `main` -- effectively re-running the program with the same ASLR seed 
     - Stack canaries: you must either corrupt data before the canary, find a way to "jump over" the canary, or somehow get the value of the canary and overwrite the canary with itself
   - [pwndbg](https://github.com/pwndbg/pwndbg) is your best friend in the whole wide world
