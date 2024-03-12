@@ -94,7 +94,7 @@ if __name__ == "__main__":
       - The fact that modern CPUs are little-endian can help -- if you can get a buffer overflow to stop midway through a pointer, you can control that to overwrite just the low bytes)
       - If you have the ability to leak one or two pointers per execution, but not enough at one time for full arbitrary code execution, you can overwrite the return address of a function to jump back to `main` -- effectively re-running the program with the same ASLR seed 
     - Stack canaries: you must either corrupt data before the canary, find a way to "jump over" the canary, or somehow get the value of the canary and overwrite the canary with itself
-  - pwndbg is your best friend in the whole wide world
+  - [pwndbg](https://github.com/pwndbg/pwndbg) is your best friend in the whole wide world
 
 Once it works locally, run it on remote and hope it works there too!
   - If not, see if you can get a clue as to why. Maybe some offsets or conditions are slightly different, and oftentimes you can use clever payloads extract the information you need
