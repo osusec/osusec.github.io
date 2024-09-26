@@ -7,10 +7,11 @@ The OSU Security Club was founded in 2014 by Daniel Reichert, and was guided by 
 
 Current leadership:
 
-- President: **Casey Colley**
-- Vice President: **Otso Barron**
-- Treasurer: **Abigail Whittle**
-- Lab Manager: **Lucas Ball**
-- Outreach Officer: **Cassandra Hedrick**
-- CTF League Coordinator: **Zane Othman-Gomez**
-- AI Security Officer: **Gabriel Kulp**
+- President: **Otso Barron**
+- Vice President: **Zane Othman-Gomez**
+- Treasurer: **Matthew Simoes**
+- Lab Managers: **Kai Morita-McVey**, **Casey Colley**
+- Outreach Officer: **Abigail Whittle**
+- Community Manager: **Kevin Rossel**
+- Relations Officer: **Grace Parrish**
+- Lead CTF League Coordinator: **Paul Simko**
