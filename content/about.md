@@ -10,7 +10,7 @@ Current leadership:
 - President: **Otso Barron**
 - Vice President: **Zane Othman-Gomez**
 - Treasurer: **Matthew Simoes**
-- Lab Manager: **Kai Morita-McVey**
+- Lab Managers: **Kai Morita-McVey**, **Casey Colley**
 - Outreach Officer: **Abigail Whittle**
 - Community Manager: **Kevin Rossel**
 - Relations Officer: **Grace Parrish**
