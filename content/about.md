@@ -11,7 +11,7 @@ Current leadership:
 - Vice President: **Zane Othman-Gomez**
 - Treasurer: **Matthew Simoes**
 - Lab Managers: **Kai Morita-McVey**, **Casey Colley**
-- Outreach Officer: **Abigail Whittle**
+- Outreach Officers: **Abigail Whittle**, **Jake Johanson**
 - Community Manager: **Kevin Rossel**
 - Relations Officer: **Grace Parrish**
 - Lead CTF League Coordinator: **Paul Simko**
