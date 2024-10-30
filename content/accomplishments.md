@@ -3,10 +3,17 @@ title: Accomplishments
 layout: 'infopage'
 ---
 
-[CTFtime Profile](https://ctftime.org/team/12858)
+
+## Various Acomplishments 
+- 10/26/24: Assisted in hosting BSidesPDX CTF
+
+
+
 
 ## CTF Competitions
+[CTFtime Profile](https://ctftime.org/team/12858)
 
+- 10/26/24: 1st - [BSides PDX CTF](TBD)
 - 12/09/22: 2nd – [NSA Codebreaker](https://twitter.com/OSUSEC/status/1601666646174666753)
 - 10/07/22: 1st – [BSides PDX CTF](https://twitter.com/OSUSEC/status/1578856635208200192)
 - 08/15/22: 16th – [DefCon Finals!!!](https://twitter.com/OSUSEC/status/1559269220445147136) ([CTFtime](https://ctftime.org/event/1662/))

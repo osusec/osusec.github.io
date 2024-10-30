@@ -36,6 +36,9 @@ menu:
   - name: 'Club Constitution'
     url: '/club-constitution/'
     weight: 2
+  - name: 'WiCyS'
+    url: '/wicys/'
+    weight: 3
 
 params:
   dateFormat: "Jan 2, 2006"
