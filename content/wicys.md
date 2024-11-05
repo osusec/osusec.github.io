@@ -3,10 +3,10 @@ title: WiCyS @ OSU
 layout: 'infopage'
 ---
 
-## About WiCyS @ OSU
+#### About WiCyS @ OSU
 TBA
 
-## Current leadership:
+#### Current leadership:
 
 - President: **Abigail Whittle**
 - Vice President: **Grace Parrish**

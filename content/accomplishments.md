@@ -4,12 +4,6 @@ layout: 'infopage'
 ---
 
 
-## Various Acomplishments 
-- 10/26/24: Assisted in hosting BSidesPDX CTF
-
-
-
-
 ## CTF Competitions
 [CTFtime Profile](https://ctftime.org/team/12858)
 

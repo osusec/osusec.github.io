@@ -111,8 +111,8 @@ Materials relating to …. well… malware reversing, forensics, threat intellig
 
 **CDC Materials**
 
-Materials for learning Cyber Defense Competition Skills. 
-Join us and learn about CDC in the CDC discord, it is listed in the OSUSec discord!
+Materials for learning Cyber Defense Competition skills.
+Join us and learn about CDC in the #cdc channel by adding the CDC role in Discord!
 
 - Vulnerable Machine Images Archive: [https://archive.wrccdc.org/images/](https://archive.wrccdc.org/images/)
 
