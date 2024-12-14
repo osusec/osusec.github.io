@@ -27,7 +27,7 @@ Also join the @CTF role on Discord to participate in CTF with us!
     - To join, see #announcements or message an officer on Discord.
 - CTF101: [https://ctf101.org/](https://ctf101.org/)
 - TrailOfBits CTF Field Guide: [https://trailofbits.github.io/ctf/](https://trailofbits.github.io/ctf/)
-- CS499: Cyber Attacks And Defense (taught by our awesome advisor, Dr. Jang, check out the Lectures at this link): [https:// cand.unexploitable.systems/cal.html](https:// cand.unexploitable.systems/cal.html)
+- CS499: Cyber Attacks And Defense (taught by our awesome advisor, Dr. Jang, check out the Lectures at this link): [https://cand.unexploitable.systems/cal.html](https://cand.unexploitable.systems/cal.html)
 - PicoCTF Primer: [https://primer.picoctf.com/](https://primer.picoctf.com/)
 - pwn.college: [https://pwn.college/](https://pwn.college/)
 - Intro to Binary Exploitation (“Nightmare”): [https://guyinatuxedo.github.io/](https://guyinatuxedo.github.io/)
@@ -115,7 +115,6 @@ Materials for learning Cyber Defense Competition skills.
 Join us and learn about CDC in the #cdc channel by adding the CDC role in Discord!
 
 - Vulnerable Machine Images Archive: [https://archive.wrccdc.org/images/](https://archive.wrccdc.org/images/)
-- [Coming Soon] CDC Practice Range @ OSUSEC: See info on how to join the CDC role, or ask an officer in Discord.
 
 **Cryptography Materials**
 
@@ -171,9 +170,9 @@ Now, if you have a gitlab.com account, you can run `!gitlab <username>` to add y
 
 If you are feeling like reviewing some malware, we have a channel named #malware where you may read, discuss and share real world exploit PoCs, malware samples and other such materials. 
 
-Of course this comes with an agreement that you will be on good behavior (you agree to abide by the [OSUSEC code of ethics](https://www.osusec.org/code-of-ethics/) and [channel rules](https://docs.google.com/document/d/11rS6Fb5jSCxDWK6nkoBpvlEZNebMGWVOymWltXXcri0/edit)).
+Of course this comes with an agreement that you will be on good behavior (you agree to abide by the [OSUSEC code of ethics](https://www.osusec.org/code-of-ethics/) and [channel rules](https://docs.google.com/document/d/11rS6Fb5jSCxDWK6nkoBpvlEZNebMGWVOymWltXXcri0t)).
 
 To join, run !malware, and agree to be good by pressing the checkbox.
 
-Also available is a #political-discussion channel, where anyone may engage in protracted discussion touching on politics. This as well comes with an agreement to the [OSUSEC code of ethics](https://www.osusec.org/code-of-ethics/) and [channel rules](https://docs.google.com/document/d/11rS6Fb5jSCxDWK6nkoBpvlEZNebMGWVOymWltXXcri0/edit).
+Also available is a #political-discussion channel, where anyone may engage in protracted discussion touching on politics. This as well comes with an agreement to the [OSUSEC code of ethics](https://www.osusec.org/code-of-ethics/) and [channel rules](https://docs.google.com/document/d/11rS6Fb5jSCxDWK6nkoBpvlEZNebMGWVOymWltXXcri0).
 
