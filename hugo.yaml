@@ -30,15 +30,15 @@ menu:
       url: '/resources/'
       weight: 7
   about:
-  - name: 'Who We Are'
-    url: '/about/'
-    weight: 1
-  - name: 'Club Constitution'
-    url: '/club-constitution/'
-    weight: 2
-  - name: 'WiCyS'
-    url: '/wicys/'
-    weight: 3
+    - name: 'Who We Are'
+      url: '/about/'
+      weight: 1
+    - name: 'Club Constitution'
+      url: '/club-constitution/'
+      weight: 2
+    - name: 'WiCyS'
+      url: '/wicys/'
+      weight: 3
 
 params:
   dateFormat: "Jan 2, 2006"
@@ -47,3 +47,11 @@ params:
   subTitle: 'Weekly Meetings, Guest Speakers, and CDC/CTF Competitions'
   sliLink: 'https://apps.ideal-logic.com/osusli?key=F3T9-25VWY_5878-CZ4R_bc14da8b'
   discordLink: 'https://discord.gg/ayX8f5W'
+  socialLinks:
+  - name: "Instagram"
+    url: "https://www.instagram.com/dam.secure/"
+    icon: "fab fa-instagram"
+  - name: "Twitter"
+    url: "https://x.com/OSUSEC"
+    icon: "fab fa-twitter"
+

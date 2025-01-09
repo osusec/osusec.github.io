@@ -1,6 +1,23 @@
 <footer class="border-top py-4 bg-light">
     <div class="text-muted text-center">
-        <p>©  2024 OSU Security Club.</p>
-        <p>Contact us at: <a href="mailto:{{ .Site.Params.emailAddr }}" class="text-reset text-decoration-none fw-bold">{{ .Site.Params.emailAddr }}</a></p>
+        <p>© <script>document.write(new Date().getFullYear())</script> OSU Security Club.</p>
+        <p>
+            Contact us at: 
+            <a href="mailto:{{ .Site.Params.emailAddr }}" class="text-reset text-decoration-none fw-bold">
+                {{ .Site.Params.emailAddr }}
+            </a>
+        </p>
+        <div class="mt-3">
+            <!-- Social Media Icons -->
+            {{ with .Site.Params.socialLinks }}
+            <div class="d-flex justify-content-center gap-3">
+                {{ range . }}
+                <a href="{{ .url }}" target="_blank" class="text-reset" title="{{ .name }}">
+                    <i class="{{ .icon }}" aria-hidden="true"></i>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
     </div>
 </footer>
