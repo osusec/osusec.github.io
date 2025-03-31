@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="linkbin.css">
+    <title>OSUSEC Link Bin</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			crossorigin="anonymous"></script>
+    <script src="linkbin.js"></script>
+</head>
+<body>
+    <h1 class="logo">OSUSEC Link Bin</h1>
+    <div class="main-container">
+        <div class="search-container">
+            <input class="big-input" type="text" id="searchInput" placeholder="Search...">
+            <input class="small-input" type="text" id="tagsInput" placeholder="Tags separated by spaces...">
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+              <option value="none">None</option>
+              <option value="asc-nicheness">Nicheness (Asc)</option>
+              <option value="des-nicheness">Nicheness (Des)</option>
+            </select> 
+        </div>
+        <div id="results-container"></div>
+    </div>
+</body>
+</html>
