@@ -4,7 +4,9 @@ layout: 'infopage'
 ---
 
 #### About WiCyS @ OSU
-TBA
+TBA 
+
+**Their website is in progress!**
 
 #### Current leadership:
 
@@ -14,3 +16,4 @@ TBA
 - Relations Officer: **Mayra Solorio**
 - Event Coordinator: **Jordan White**
 - Secretary: **Jacquelyn Sansone**
+- Web Master: **Jamie Dang** 
