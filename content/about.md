@@ -10,7 +10,7 @@ The OSU Security Club was founded in 2014 by Daniel Reichert, and was guided by 
 #### Current leadership:
 
 - President: **Zane Othman-Gomez**
-- Vice President: **Zane Othman-Gomez**
+- Vice President: **James Hukill**
 - Treasurer: **Paige Wiley**
 - Lab Managers: **Jake Johanson**, **Jamie Dang**
 - Identity Access Management Officer: **Troy Lopez**
