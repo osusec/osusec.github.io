@@ -19,6 +19,7 @@ The OSU Security Club was founded in 2014 by Daniel Reichert, and was guided by 
 - Lead CTF League Coordinator: **Paul Simko**
 
 #### Future leadership (Fall 2025): 
+
 - President: **Zane Othman-Gomez**
 - Vice President: **James Hukill**
 - Treasurer: **Paige Wiley**
