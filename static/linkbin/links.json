@@ -1,0 +1,30 @@
+[
+    {
+        "link": "https://github.com/HACKE-RC/awesome-reversing",
+        "title": "GitHub | Awesome Reversing",
+        "description": "A github awesome list for reverse engineering",
+        "tags": ["awesome-list", "reversing", "github"],
+        "nicheness": 1
+    },
+    {
+        "link": "https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20System%20Internals%207e%20Part%201.pdf",
+        "title": "Windows Internals E-Book PDF",
+        "description": "An e book about windows internals",
+        "tags": ["windows", "ebook"],
+        "nicheness": 5
+    },
+    {
+        "link": "https://secret.club/",
+        "title": "secret.club reverse engineering blog",
+        "description": "A blog with some really interesting reverse engineering posts. Many related to windows or anti-cheat bypass",
+        "tags": ["blog", "windows", "reversing"],
+        "nicheness": 3
+    },
+    {
+        "link": "https://www.unknowncheats.me/forum/rust-language-/588419-windows-uefi-bootkit-rust-codename-redlotus.html",
+        "title": "UEFI Bootkit in Rust (RedLotus) on UnknownCheats.me",
+        "description": "A UEFI bootkit written in rust, originally intended to assist in bypassing anti-cheats by getting code execution before the drivers for anti-cheats have loaded.",
+        "tags": ["bootkit", "rust", "UEFI", "github", "windows"],
+        "nicheness": 7
+    }
+]
