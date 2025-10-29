@@ -4,16 +4,16 @@ layout: 'infopage'
 ---
 
 #### About WiCyS @ OSU
-TBA 
-
-**Their website is in progress!**
-
+Website: https://wicys-at-osu.org
 #### Current leadership:
 
-- President: **Abigail Whittle**
-- Vice President: **Grace Parrish**
-- Treasurer: **Alexa Baruela**
-- Relations Officer: **Mayra Solorio**
-- Event Coordinator: **Jordan White**
-- Secretary: **Jacquelyn Sansone**
-- Web Master: **Jamie Dang** 
+- President: **Jackie**
+- Vice President: **Mayra**
+- Secretary: **Lorelei**
+- Treasurer: **Alexa**
+- Fundraiser Coordinator: **Jenna R**
+- Infrastructure: **Jamie** 
+- CTF Coordinator: **Jordan** 
+- Recruitment: **Izzy**
+- Outreach: **Jay**
+- Public Relations: **Jenna W**

@@ -7,7 +7,7 @@ layout: 'infopage'
 
 ## Overview
 
-The OSUSEC CTF League is a great way for anyone interested in cybersecurity to develop their offensive security skills and get into playing CTF with the OSUSEC team! 
+The DAMSEC CTF League is a great way for anyone interested in cybersecurity to develop their offensive security skills and get into playing CTF with the DAMSEC team! 
 
 CTF League is a year-long competition that runs similar to a standard capture the flag event, with new challenges released every week. Each week, players compete to solve timed challenges intended to teach web, application, and cryptographic security tactics and prepare players for CTF competitions that OSU competes in as a club.
 
@@ -17,14 +17,9 @@ Through competing in CTF League, each player receives points in accordance with 
 
 ## Prizes
 
-OSU players are eligible to win prizes! The top ten players will receive custom OSUSEC sweatshirts, and the top 3 players will choose from a selection of prizes, including:
+OSU players are eligible to win prizes! The top ten players will receive custom DAMSEC sweatshirts, and the top 3 players will choose from a selection of prizes, including:
 
-- Raspberry Pi 4 Kit
-- Wifi Pineapple
-- Rubber Ducky USB
-- Bose QuietComfort 35 Headphones
-- Flipper Zero
-- (More prizes tba)
+- TBD
 
 ## Meeting Times & Dates
 
