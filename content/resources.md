@@ -12,7 +12,7 @@ Make sure to sign up for the club on SLI (that’s how we report numbers), and j
 
 - Main Website: [https://www.osusec.org/](https://www.osusec.org/)
 - Club Constitution: [https://www.osusec.org/club-constitution/](https://www.osusec.org/club-constitution/)
-- Discord: [https://discord.gg/2hNARuy](https://discord.gg/2hNARuy)
+- Discord: [https://discord.gg/tdhsXdz6Aa](https://discord.gg/tdhsXdz6Aa)
 - CTFTime: [https://ctftime.org/team/12858](https://ctftime.org/team/12858)
 - SLI Signup: [https://apps.ideal-logic.com/osusli?key=F3T9-25VWY_5878-CZ4R_bc14da8b](https://apps.ideal-logic.com/osusli?key=F3T9-25VWY_5878-CZ4R_bc14da8b)
 - Discord Bot Walkthrough: See Below
