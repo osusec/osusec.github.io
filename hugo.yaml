@@ -1,6 +1,6 @@
 baseURL: 'https://osusec.org/'
 languageCode: 'en-us'
-Title: 'OSU Security Club'
+Title: Security Club at OSU
 
 taxonomies:
   category: 'categories'
@@ -43,7 +43,7 @@ menu:
 params:
   dateFormat: "Jan 2, 2006"
   emailAddr: 'security.clubs@oregonstate.edu'
-  fullTitle: 'Oregon State University Security Club'
+  fullTitle: 'Security Club at Oregon State University'
   subTitle: 'Weekly Meetings, Guest Speakers, and CDC/CTF Competitions'
   sliLink: 'https://apps.ideal-logic.com/osusli?key=F3T9-25VWY_5878-CZ4R_bc14da8b'
   discordLink: 'https://discord.gg/ayX8f5W'
