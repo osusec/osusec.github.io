@@ -9,10 +9,11 @@ The OSU Security Club was founded in 2014 by Daniel Reichert, and was guided by 
 
 #### Current leadership:
 
-- President: **Zane Othman-Gomez**
-- Vice President: **Nathan H**
-- Treasurer: **Paige Wiley**
-- Lab Managers: **Jake Johanson**, **Jamie Dang**
-- Identity Access Management Officer: **Troy Lopez**
-- Outreach Officers: **Tyler Knudson**, **Izzie Carbonell**, **Meiling Miller**
-- Capture The Flag League Coordinator: **Nate Baird**
+- President: **James Hukill**
+- Vice President: **Meiling Miller**
+- Treasurer: **Kyla Daskalos**
+- Infrastructure: **Judah Schwanz**, **Jackson Bennett**
+- Identity Access Management Officer: **Almog Danziger**
+- Outreach Officers: **Emily MacPherson**, **Matthew Gilligan**, **Isabel Carbonell**
+- Capture The Flag League Coordinator: **John Ruckley**
+- CDC: **Paige Wiley**

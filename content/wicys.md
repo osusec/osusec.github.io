@@ -7,13 +7,12 @@ layout: 'infopage'
 Website: https://wicys-at-osu.org
 #### Current leadership:
 
-- President: **Jackie**
-- Vice President: **Mayra**
-- Secretary: **Lorelei**
-- Treasurer: **Alexa**
-- Fundraiser Coordinator: **Jenna R**
-- Infrastructure: **Jamie** 
+- President: **Lorelei**
+- Vice President: **Jenna W**
+- Secretary: **Avabella**
+- Treasurer: **Jenna R**
+- Infrastructure: **Vedika** 
 - CTF Coordinator: **Jordan** 
 - Recruitment: **Izzy**
 - Outreach: **Jay**
-- Public Relations: **Jenna W**
+- Public Relations: **Anna**
