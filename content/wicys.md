@@ -4,7 +4,7 @@ layout: 'infopage'
 ---
 
 #### About WiCyS @ OSU
-Website: https://wicys-at-osu.org
+Website: https://wicys-osu.github.io/wicys-at-osu/
 #### Current leadership:
 
 - President: **Lorelei**
